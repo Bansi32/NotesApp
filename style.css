@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: #e0a800;
+}
+.nav_color {
+  background-color: rgb(229, 248, 55);
+}
+.h1 {
+  padding-bottom: 20px;
+  animation: text 3s steps(21);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+h2 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+@keyframes text {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 450px;
+  }
+}
+
+#para {
+  position: fixed;
+  justify-content: center;
+  text-align: center;
+  left: 30%;
+  right: 30%;
+}
+
+.noteCard {
+  background-color: #eaf39b;
+}
+.card-body {
+  background-color: #eaf39b;
+}
+/* .index {
+  word-spacing: 150px;
+} */
+.fav {
+  position: relative;
+  left: 4%;
+}

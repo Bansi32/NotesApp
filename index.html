@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1\jquery-ui.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light nav_color">
+        <a class="navbar-brand notes_app notes_app" href="#" onclick="pagechange()"><i
+                class="far fa-sticky-note">&nbsp;</i>Note's App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link fav_notes" href="#" onclick="pagechangetoimp()">Imp Notes<span
+                            class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search Notes"
+                    aria-label="Search">
+                <button class="btn btn-warning my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </nav>
+    <div class="container-sm my-4">
+        <div class="mx-auto" style="width: 450px;">
+            <h1 class="h1">Welcome To Note's App</h1>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Title</h5>
+                <div class="form-group">
+                    <textarea class="form-control" id="addTitle" rows="1" placeholder="Enter title"></textarea>
+                </div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Add a Note</h5>
+                <div class="form-group">
+                    <textarea class="form-control" id="addText" rows="3" placeholder="Write your Note's"></textarea>
+                </div>
+                <button class="btn btn-warning" id="addBtn">Add</button>
+            </div>
+        </div>
+        <div class="mx-auto" style="width: 200px;">
+            <h2>Your Note's </h2>
+        </div>
+        <div id="notes" class="row container-fluid"></div>
+    </div>
+    <script src="https://kit.fontawesome.com/d7ff6fb263.js" crossorigin="anonymous"></script>
+    <script src="jquery-ui-1.12.1\jquery-ui.min.js"></script>
+    <script src="jquery-ui-1.12.1\external\jquery\jquery.js"></script>
+    <script src="bootstrap-4.5.3-dist\js\bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script src="imp.js"></script>
+</body>
+
+</html>
