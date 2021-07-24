@@ -1,7 +1,7 @@
 # Notes App with pure JavaScript
 ## Plus userfriendly and compatible in mobile phones.
 #### Git Hub website: [Notes App](github.com/bansi32/notesapp.git)
-### Reference : Code With Harry
+##### Reference : Code With Harry
 **1. Home Page:**
 
 ```
